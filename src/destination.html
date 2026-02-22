@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinations</title>
 
-        <link rel="stylesheet" href="./output.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
     <nav class="w-full fixed top-0 left-0 z-50 bg-white">
       <div
         class="max-w-7xl mx-auto px-8 py-2 flex items-center justify-between"
       >
         <!-- Logo -->
-       <a href="./hotel.html">
+        <a href="./hotel.html">
           <img src="./images/logo.png" alt="Logo" class="h-8" />
         </a>
         <!-- Center Links -->
@@ -40,7 +39,345 @@
         </div>
       </div>
     </nav>
-    
+
+    <!-- ================= HERO SECTION ================= -->
+    <section
+      class="relative h-[750px] bg-cover bg-center"
+      style="background-image: url(&quot;./images/city-view.png&quot;)"
+    >
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-6xl mx-auto h-full flex flex-col justify-center items-center text-white text-center px-6"
+      >
+        <!-- Title -->
+        <h1 class="text-[64px] font-semibold">Enjoy in the best way!</h1>
+
+        <p class="mt-4 text-xl text-gray-200">
+          Enjoy our services for your trip anytime
+        </p>
+
+        <!-- ================= SEARCH BOX ================= -->
+        <div class="mt-14 w-full">
+          <!-- Tabs -->
+          <div
+            class="bg-white/20 backdrop-blur-md rounded-t-2xl px-6 py-4 flex gap-8 text-white text-lg font-medium"
+          >
+            <button class="text-orange-400 border-b-2 border-orange-400 pb-1">
+              Public Tours
+            </button>
+            <button class="opacity-70 hover:opacity-100">Private Tours</button>
+          </div>
+
+          <!-- Form Box -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex items-center justify-between"
+          >
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Number of people</span>
+              <span class="text-gray-400 text-sm">Choose number</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Date</span>
+              <span class="text-gray-400 text-sm">Choose Date</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Time</span>
+              <span class="text-gray-400 text-sm">Choose Time</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Tour</span>
+              <span class="text-gray-400 text-sm">Select Tour</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6">
+              <span class="font-medium text-gray-700">Transportation</span>
+              <span class="text-gray-400 text-sm">Select Transportation</span>
+            </div>
+
+            <!-- Search Button -->
+            <div class="w-24 h-24">
+              <img src="./images/search.png" alt="magnifying glasses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POPULAR DESTINATION ================= -->
+    <section class="bg-white py-28">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Heading -->
+        <div class="text-center mb-16">
+          <p class="text-gray-500 font-medium uppercase tracking-widest">
+            Category
+          </p>
+          <h2 class="text-5xl font-bold text-[#181E4B] mt-3">
+            Find Popular Destination
+          </h2>
+        </div>
+
+        <!-- Cards Row -->
+        <div class="grid grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-[#F6F3EA] rounded-2xl p-4">
+            <img
+              src="./images/mountain-hiking.png"
+              class="rounded-xl w-full h-56 object-cover"
+            />
+
+            <h3 class="mt-6 text-lg font-semibold">Mountain Hiking Tour</h3>
+
+            <p class="text-gray-500 text-sm mt-1">Mountain Hiking Tour</p>
+
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-xl font-bold">
+                $89
+                <span class="text-gray-400 text-sm font-normal">/Person</span>
+              </p>
+
+              <button
+                class="bg-black text-white px-5 py-2 rounded-full text-sm hover:opacity-80 transition"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#F6F3EA] rounded-2xl p-4">
+            <img
+              src="./images/machu-pichu-peru.png"
+              class="rounded-xl w-full h-56 object-cover"
+            />
+
+            <h3 class="mt-6 text-lg font-semibold">Machu Picchu, Peru</h3>
+
+            <p class="text-gray-500 text-sm mt-1">Machu Picchu, Peru</p>
+
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-xl font-bold">
+                $99
+                <span class="text-gray-400 text-sm font-normal">/Person</span>
+              </p>
+
+              <button
+                class="border border-black px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#F6F3EA] rounded-2xl p-4">
+            <img
+              src="./images/arizona.png"
+              class="rounded-xl w-full h-56 object-cover"
+            />
+
+            <h3 class="mt-6 text-lg font-semibold">
+              The Grand Canyon, Arizona
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-1">Mountain Hiking Tour</p>
+
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-xl font-bold">
+                $70
+                <span class="text-gray-400 text-sm font-normal">/Person</span>
+              </p>
+
+              <button
+                class="border border-black px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-[#F6F3EA] rounded-2xl p-4">
+            <img
+              src="./images/rome-italy.png"
+              class="rounded-xl w-full h-56 object-cover"
+            />
+
+            <h3 class="mt-6 text-lg font-semibold">Rome, Italy</h3>
+
+            <p class="text-gray-500 text-sm mt-1">Rome, Italy</p>
+
+            <div class="flex items-center justify-between mt-6">
+              <p class="text-xl font-bold">
+                $99
+                <span class="text-gray-400 text-sm font-normal">/Person</span>
+              </p>
+
+              <button
+                class="border border-black px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= BRAND LOGOS ================= -->
+        <div class="flex items-center justify-between mt-12 opacity-70">
+          <img src="./images/airway-group.png" alt="airway group" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TOP DESTINATION GRID ================= -->
+    <section class="">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Heading -->
+        <div class="text-center mb-16">
+          <p class="text-gray-500 font-medium uppercase tracking-widest">
+            Category
+          </p>
+          <h2 class="text-5xl font-bold text-[#181E4B] mt-3">
+            Top Destination
+          </h2>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-4 grid-rows-2 gap-6 h-[650px] mt-5">
+          <!-- Left Top -->
+          <div
+            class="relative col-span-1 row-span-1 rounded-3xl overflow-hidden"
+          >
+            <img
+              src="./images/wore-fall.png"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            ></div>
+
+            <!-- Rating -->
+            <span
+              class="absolute top-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full"
+            >
+              3.5
+            </span>
+
+            <!-- Text -->
+            <div class="absolute bottom-6 left-6 text-white">
+              <h4 class="text-lg font-semibold">Vietnam</h4>
+              <p class="text-sm opacity-80">Worefall</p>
+            </div>
+          </div>
+
+          <!-- Middle Big (Tall) -->
+          <div
+            class="relative col-span-2 row-span-2 rounded-3xl overflow-hidden"
+          >
+            <img
+              src="./images/worefall1.png"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            ></div>
+
+            <span
+              class="absolute top-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full"
+            >
+              3.5
+            </span>
+
+            <div class="absolute bottom-6 left-6 text-white">
+              <h4 class="text-xl font-semibold">Vietnam</h4>
+              <p class="text-sm opacity-80">Worefall</p>
+            </div>
+          </div>
+
+          <!-- Right Top -->
+          <div
+            class="relative col-span-1 row-span-1 rounded-3xl overflow-hidden"
+          >
+            <img
+              src="./images/worefall2.png"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            ></div>
+
+            <span
+              class="absolute top-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full"
+            >
+              3.5
+            </span>
+
+            <div class="absolute bottom-6 left-6 text-white">
+              <h4 class="text-lg font-semibold">Vietnam</h4>
+              <p class="text-sm opacity-80">Worefall</p>
+            </div>
+          </div>
+
+          <!-- Left Bottom -->
+          <div
+            class="relative col-span-1 row-span-1 rounded-3xl overflow-hidden"
+          >
+            <img
+              src="./images/worefall4.png"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            ></div>
+
+            <span
+              class="absolute top-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full"
+            >
+              3.5
+            </span>
+
+            <div class="absolute bottom-6 left-6 text-white">
+              <h4 class="text-lg font-semibold">Vietnam</h4>
+              <p class="text-sm opacity-80">Worefall</p>
+            </div>
+          </div>
+
+          <!-- Right Bottom 1 -->
+          <div
+            class="relative col-span-1 row-span-1 rounded-3xl overflow-hidden"
+          >
+            <img
+              src="./images/worefall5.png"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+            ></div>
+
+            <span
+              class="absolute top-4 left-4 bg-black/70 text-white text-xs px-3 py-1 rounded-full"
+            >
+              3.5
+            </span>
+
+            <div class="absolute bottom-6 left-6 text-white">
+              <h4 class="text-lg font-semibold">Vietnam</h4>
+              <p class="text-sm opacity-80">Worefall</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ============= FOOTER =============== -->
     <footer class="pt-24 pb-10">
@@ -110,7 +447,7 @@
             <p class="text-gray-600 mb-6">Discover our app</p>
 
             <!-- App Buttons -->
-           <div class="flex gap-4">
+            <div class="flex gap-4">
               <img src="./images/playstore.png" class="h-10" />
               <img src="./images/app-store.png" class="h-10" />
             </div>
@@ -123,5 +460,5 @@
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotels</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
     <nav class="w-full fixed top-0 left-0 z-50 bg-white">
@@ -40,16 +40,658 @@
       </div>
     </nav>
 
+    <!-- ================= HERO SECTION ================= -->
+    <section
+      class="relative h-[750px] bg-cover bg-center"
+      style="background-image: url(&quot;./images/city-view.png&quot;)"
+    >
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
 
+      <!-- Content -->
+      <div
+        class="relative z-10 max-w-6xl mx-auto h-full flex flex-col justify-center items-center text-white text-center px-6"
+      >
+        <!-- Title -->
+        <h1 class="text-[64px] font-semibold">Enjoy in the best way!</h1>
 
+        <p class="mt-4 text-xl text-gray-200">
+          Enjoy our services for your trip anytime
+        </p>
 
+        <!-- ================= SEARCH BOX ================= -->
+        <div class="mt-14 w-full">
+          <!-- Tabs -->
+          <div
+            class="bg-white/20 backdrop-blur-md rounded-t-2xl px-6 py-4 flex gap-8 text-white text-lg font-medium"
+          >
+            <button class="text-orange-400 border-b-2 border-orange-400 pb-1">
+              Public Tours
+            </button>
+            <button class="opacity-70 hover:opacity-100">Private Tours</button>
+          </div>
 
-     <!-- ============= FOOTER =============== -->
+          <!-- Form Box -->
+          <div
+            class="bg-white rounded-2xl shadow-2xl p-6 flex items-center justify-between"
+          >
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Number of people</span>
+              <span class="text-gray-400 text-sm">Choose number</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Date</span>
+              <span class="text-gray-400 text-sm">Choose Date</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Time</span>
+              <span class="text-gray-400 text-sm">Choose Time</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6 border-r">
+              <span class="font-medium text-gray-700">Tour</span>
+              <span class="text-gray-400 text-sm">Select Tour</span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex flex-col px-6">
+              <span class="font-medium text-gray-700">Transportation</span>
+              <span class="text-gray-400 text-sm">Select Transportation</span>
+            </div>
+
+            <!-- Search Button -->
+            <div class="w-24 h-24">
+              <img src="./images/search.png" alt="magnifying glasses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BEST DEAL HOTELS ================= -->
+    <section class="bg-white py-24">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-12">
+          <div>
+            <h2 class="flex text-4xl font-bold text-black">
+              <span><img class="h-7" src="./images/fire.png" alt="" /></span>
+              Best Deal Hotels
+            </h2>
+            <p class="text-gray-500 mt-2">
+              Quality as judged by customers. Book at the ideal price!
+            </p>
+          </div>
+
+          <!-- Arrows -->
+          <div class="flex gap-4">
+            <button
+              class="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center"
+            >
+              ←
+            </button>
+            <button
+              class="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-2 gap-10">
+          <!-- ===== HOTEL CARD ===== -->
+          <div class="relative bg-gray-50 rounded-3xl overflow-hidden flex">
+            <!-- Discount Ribbon -->
+            <div
+              class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-2 rounded-bl-xl"
+            >
+              -25%
+            </div>
+
+            <!-- Image -->
+            <div class="relative w-1/2">
+              <img
+                src="./images/img-hotel4.png.png"
+                class="h-full w-full object-cover"
+              />
+
+              <!-- Heart -->
+              <div
+                class="absolute top-4 left-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-1/2 p-6 flex flex-col justify-between">
+              <div>
+                <span
+                  class="inline-block bg-gray-200 text-xs px-3 py-1 rounded-full mb-4"
+                >
+                  Luxury
+                </span>
+
+                <h3 class="text-lg font-semibold">
+                  Fairmont Resort, Dubai, United Arab Emirates
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2">📍 Dubai, UAE</p>
+
+                <div class="text-black mt-2">★★★★★</div>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $148.25
+                  <span class="text-gray-400 text-sm font-normal">/ night</span>
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Duplicate Card (Change Image / Badge) ===== -->
+          <div class="relative bg-gray-50 rounded-3xl overflow-hidden flex">
+            <div
+              class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-2 rounded-bl-xl"
+            >
+              -28%
+            </div>
+
+            <div class="relative w-1/2">
+              <img
+                src="./images/img-hotel4.png.png"
+                class="h-full w-full object-cover"
+              />
+
+              <div
+                class="absolute top-4 left-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+            </div>
+
+            <div class="w-1/2 p-6 flex flex-col justify-between">
+              <div>
+                <span
+                  class="inline-block bg-blue-100 text-xs px-3 py-1 rounded-full mb-4"
+                >
+                  Family
+                </span>
+
+                <h3 class="text-lg font-semibold">
+                  Fairmont Resort, Dubai, United Arab Emirates
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2">📍 Dubai, UAE</p>
+
+                <div class="text-black mt-2">★★★★★</div>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $148.25
+                  <span class="text-gray-400 text-sm font-normal">/ night</span>
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="relative bg-gray-50 rounded-3xl overflow-hidden flex">
+            <div
+              class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-2 rounded-bl-xl"
+            >
+              -28%
+            </div>
+
+            <div class="relative w-1/2">
+              <img
+                src="./images/img-hotel2.png.png"
+                class="h-full w-full object-cover"
+              />
+
+              <div
+                class="absolute top-4 left-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+            </div>
+
+            <div class="w-1/2 p-6 flex flex-col justify-between">
+              <div>
+                <span
+                  class="inline-block bg-blue-100 text-xs px-3 py-1 rounded-full mb-4"
+                >
+                  Family
+                </span>
+
+                <h3 class="text-lg font-semibold">
+                  Fairmont Resort, Dubai, United Arab Emirates
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2">📍 Dubai, UAE</p>
+
+                <div class="text-black mt-2">★★★★★</div>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $148.25
+                  <span class="text-gray-400 text-sm font-normal">/ night</span>
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="relative bg-gray-50 rounded-3xl overflow-hidden flex">
+            <div
+              class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-2 rounded-bl-xl"
+            >
+              -28%
+            </div>
+
+            <div class="relative w-1/2">
+              <img
+                src="./images/img-hotel.png.png"
+                class="h-full w-full object-cover"
+              />
+
+              <div
+                class="absolute top-4 left-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+            </div>
+
+            <div class="w-1/2 p-6 flex flex-col justify-between">
+              <div>
+                <span
+                  class="inline-block bg-blue-100 text-xs px-3 py-1 rounded-full mb-4"
+                >
+                  Family
+                </span>
+
+                <h3 class="text-lg font-semibold">
+                  Fairmont Resort, Dubai, United Arab Emirates
+                </h3>
+
+                <p class="text-gray-400 text-sm mt-2">📍 Dubai, UAE</p>
+
+                <div class="text-black mt-2">★★★★★</div>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $148.25
+                  <span class="text-gray-400 text-sm font-normal">/ night</span>
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TOP RATED HOTELS ================= -->
+    <section class="bg-white py-24">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-12">
+          <div>
+            <h2 class="text-4xl font-bold text-black">Top Rated Hotels</h2>
+            <p class="text-gray-500 mt-2">
+              Quality as judged by customers. Book at the ideal price!
+            </p>
+          </div>
+
+          <button
+            class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition"
+          >
+            View More →
+          </button>
+        </div>
+
+        <!-- Horizontal Scroll Container -->
+        <div class="flex gap-8 overflow-x-auto pb-4 scroll-smooth">
+          <!-- CARD -->
+          <div
+            class="min-w-[360px] shrink-0 bg-gray-50 rounded-3xl overflow-hidden shadow-sm"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./images/img-hotel2.png.png"
+                class="w-full h-[240px] object-cover"
+              />
+
+              <!-- Heart -->
+              <div
+                class="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+
+              <!-- Rating Badge -->
+              <div
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white px-4 py-1 rounded-full text-sm shadow"
+              >
+                ⭐ 4.96 (672 reviews)
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">
+                California Sunset/Twilight Boat Cruise
+              </h3>
+
+              <div
+                class="flex items-center justify-between mt-3 text-gray-500 text-sm"
+              >
+                <span>📍 Manchester, England</span>
+                <span class="text-black">★★★★★</span>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $48.25
+                  <span class="text-gray-400 text-sm font-normal"
+                    >/ person</span
+                  >
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="min-w-[360px] shrink-0 bg-gray-50 rounded-3xl overflow-hidden shadow-sm"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./images/img-hotel2.png.png"
+                class="w-full h-[240px] object-cover"
+              />
+
+              <!-- Heart -->
+              <div
+                class="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+
+              <!-- Rating Badge -->
+              <div
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white px-4 py-1 rounded-full text-sm shadow"
+              >
+                ⭐ 4.96 (672 reviews)
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">
+                California Sunset/Twilight Boat Cruise
+              </h3>
+
+              <div
+                class="flex items-center justify-between mt-3 text-gray-500 text-sm"
+              >
+                <span>📍 Manchester, England</span>
+                <span class="text-black">★★★★★</span>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $48.25
+                  <span class="text-gray-400 text-sm font-normal"
+                    >/ person</span
+                  >
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="min-w-[360px] shrink-0 bg-gray-50 rounded-3xl overflow-hidden shadow-sm"
+          >
+            <!-- Image -->
+            <div class="relative">
+              <img
+                src="./images/img-hotel.png.png"
+                class="w-full h-[240px] object-cover"
+              />
+
+              <!-- Heart -->
+              <div
+                class="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+
+              <!-- Rating Badge -->
+              <div
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white px-4 py-1 rounded-full text-sm shadow"
+              >
+                ⭐ 4.96 (672 reviews)
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">
+                California Sunset/Twilight Boat Cruise
+              </h3>
+
+              <div
+                class="flex items-center justify-between mt-3 text-gray-500 text-sm"
+              >
+                <span>📍 Manchester, England</span>
+                <span class="text-black">★★★★★</span>
+              </div>
+
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $48.25
+                  <span class="text-gray-400 text-sm font-normal"
+                    >/ person</span
+                  >
+                </p>
+
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="min-w-[360px] shrink-0 bg-gray-50 rounded-3xl overflow-hidden shadow-sm"
+          >
+            <div class="relative">
+              <img
+                src="./images/img-hotel2.png.png"
+                class="w-full h-[240px] object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow"
+              >
+                ♡
+              </div>
+              <div
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white px-4 py-1 rounded-full text-sm shadow"
+              >
+                ⭐ 4.96 (672 reviews)
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">
+                NYC: Food Tastings and Culture Tour
+              </h3>
+              <div
+                class="flex items-center justify-between mt-3 text-gray-500 text-sm"
+              >
+                <span>📍 Manchester, England</span>
+                <span class="text-black">★★★★★</span>
+              </div>
+              <div class="flex items-center justify-between mt-6">
+                <p class="text-xl font-bold">
+                  $17.32
+                  <span class="text-gray-400 text-sm font-normal"
+                    >/ person</span
+                  >
+                </p>
+                <button
+                  class="bg-gray-200 px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="bg-white py-28">
+      <div class="max-w-7xl mx-auto px-8">
+        <!-- Badge -->
+        <div class="flex justify-center mb-6">
+          <div
+            class="bg-orange-500 text-white px-6 py-2 rounded-full flex items-center gap-2 shadow"
+          >
+            <div class="flex -space-x-2">
+              <img
+                src="./images/user1.jpg"
+                class="w-6 h-6 rounded-full border-2 border-white"
+              />
+              <img
+                src="./images/user2.jpg"
+                class="w-6 h-6 rounded-full border-2 border-white"
+              />
+              <img
+                src="./images/user3.jpg"
+                class="w-6 h-6 rounded-full border-2 border-white"
+              />
+            </div>
+            <span class="text-sm font-medium">Testimonials</span>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="text-5xl font-bold text-center mb-20">
+          Don't take our word for it
+        </h2>
+
+        <!-- Main Layout -->
+        <div class="flex items-center justify-between">
+          <!-- ===== UPDATED LEFT SIDE ===== -->
+          <div
+            class="w-[420px] h-[420px] rounded-3xl overflow-hidden shadow-lg"
+          >
+            <img
+              src="./images/img-testimonial.png.png"
+              alt="Testimonials image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="flex items-center gap-6">
+            <!-- Left Arrow -->
+            <button
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center shadow hover:bg-gray-200 transition"
+            >
+              ←
+            </button>
+
+            <!-- Testimonial Card -->
+            <div class="bg-gray-50 rounded-3xl p-10 w-[520px] shadow-lg">
+              <h3 class="text-xl font-semibold mb-4">
+                The best booking system
+              </h3>
+
+              <p class="text-gray-600 leading-relaxed">
+                I've been using the hotel booking system for several years now,
+                and it's become my go-to platform for planning my trips. The
+                interface is user-friendly, and I appreciate the detailed
+                information and real-time availability of hotels.
+              </p>
+
+              <div class="flex items-center justify-between mt-8">
+                <div class="flex items-center gap-4">
+                  <img
+                    src="./images/user-avatar.jpg"
+                    class="w-12 h-12 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="font-semibold">Sara Mohamed</p>
+                    <p class="text-gray-500 text-sm">Jakatar</p>
+                  </div>
+                </div>
+
+                <div class="text-yellow-400 text-lg">★★★★★</div>
+              </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button
+              class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center shadow hover:bg-gray-200 transition"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= FOOTER =============== -->
     <footer class="pt-24 pb-10">
       <div class="max-w-7xl mx-auto px-8">
-        <!-- Top Footer Content -->
         <div class="grid grid-cols-5 gap-16">
-          <!-- Logo + Description -->
+
           <div class="col-span-1">
             <!-- <h class="text-3xl font-bold text-[#181E4B]">Jadoo.</h> -->
             <img src="./images/logo.png" alt="logo" />
